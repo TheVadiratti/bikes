@@ -1,0 +1,9 @@
+.header__menu-item {
+  margin-left: 39px;
+  list-style-type: none;
+  @include font (500, 14px, 18px);
+}
+
+.header__menu-item:last-of-type {
+  margin-left: 0;
+}

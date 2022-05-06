@@ -1,9 +1,17 @@
+@mixin font ($weight, $size, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+$font-black: #151515;
+
 .page {
   width: 100%;
   margin: auto;
   background-color: #f4f4f4;
   font-family: 'Inter', 'Arial', sans-serif;
-  color: #151515;
+  color: $font-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
