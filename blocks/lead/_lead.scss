@@ -4,3 +4,10 @@
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(5, auto);
 }
+
+@media screen and (max-width: 1280px) {
+  .lead {
+    grid-template-columns: 1fr;
+    padding: 0 18px 0;
+  }
+}

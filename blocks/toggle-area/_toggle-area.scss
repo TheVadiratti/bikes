@@ -1,0 +1,6 @@
+.toggle-area {
+  @include size (auto, 28px);
+  margin: auto 0 38px;
+  display: flex;
+  align-items: center;
+}

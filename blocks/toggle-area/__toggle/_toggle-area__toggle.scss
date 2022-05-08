@@ -1,0 +1,11 @@
+.toggle-area__toggle {
+  @include size (44px, 24px);
+  margin: 0 22px 0;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 9999px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}

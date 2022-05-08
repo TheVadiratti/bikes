@@ -10,13 +10,20 @@
     <title>Bikes</title>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header header_opened">
+      <div class="toggle-area">
+        <div class="toggle-area__image toggle-area__image_light"></div>
+        <button type="button" class="toggle-area__toggle">
+          <div class="toggle-area__switch"></div>
+        </button>
+        <div class="toggle-area__image toggle-area__image_dark"></div>
+      </div>
       <menu class="header__menu">
         <li class="header__menu-item"><a class="header__menu-link" href="#">Тренировки</a></li>
         <li class="header__menu-item"><a class="header__menu-link" href="#">Велосипеды</a></li>
         <li class="header__menu-item"><a class="header__menu-link" href="#">Покрытия и градиенты</a></li>
       </menu>
-      <button type="button" class="header__burger" aria-label="Меню"></button>
+      <button type="button" class="header__button header__button_type_x" aria-label="Меню"></button>
     </header>
     <main class="main">
       <section class="lead">

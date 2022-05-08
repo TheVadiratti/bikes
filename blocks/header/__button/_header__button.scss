@@ -1,0 +1,17 @@
+.header__button {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__button {
+    display: block;
+    @include size (22px, 20px);
+    padding: 0;
+    margin-right: 18px;
+    background-color: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    align-self: flex-end;
+  }
+}

@@ -10,6 +10,10 @@
 
 @media screen and (max-width: 1280px) {
   .header__menu-item {
-    display: none;
+    margin: 32px 0 0;
+  }
+
+  .header__menu-item:last-of-type {
+    margin-top: 0;
   }
 }
