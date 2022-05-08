@@ -27,7 +27,9 @@
 
 .lead {
   padding: 20px 0 0 120px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(5, auto);
 }
 
 .header__menu {
@@ -150,6 +152,10 @@
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 
 .lead__card {

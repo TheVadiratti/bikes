@@ -1,4 +1,6 @@
 .lead {
   padding: 20px 0 0 120px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(5, auto);
 }
