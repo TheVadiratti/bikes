@@ -1,6 +1,15 @@
-@import '../../blocks/page/_page.scss';
-@import '../../blocks/header/_header.scss';
+@import '../../blocks/page/page';
+@import '../../blocks/header/header';
+@import '../../blocks/main/main';
+@import '../../blocks/lead/lead';
 
-@import '../../blocks/header/header__menu/_header__menu';
-@import '../../blocks/header/header__menu-item/_header__menu-item.scss';
-@import '../../blocks/header/header__menu-link/header__menu-link';
+@import '../../blocks/header/__menu/header__menu';
+@import '../../blocks/header/__menu-item/header__menu-item';
+@import '../../blocks/header/__menu-link/header__menu-link';
+@import '../../blocks/lead/__title/lead__title';
+@import '../../blocks/lead/__description/lead__description';
+@import '../../blocks/lead/__button/lead__button';
+@import '../../blocks/lead/__name-cnt/lead__name-cnt';
+@import '../../blocks/lead/__name/lead__name';
+@import '../../blocks/lead/__line/lead__line';
+@import '../../blocks/lead/__image/lead__image';

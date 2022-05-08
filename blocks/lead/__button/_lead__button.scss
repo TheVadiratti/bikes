@@ -1,0 +1,16 @@
+.lead__button {
+  @include size (180px, 50px);
+  margin-top: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  @include font (600, 14px, 18px);
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: $green;
+  cursor: pointer;
+}
+
+.lead__button:hover {
+  background-color: #319E75;
+}

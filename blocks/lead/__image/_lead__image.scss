@@ -1,0 +1,8 @@
+.lead__image {
+  @include size (42.5vw, 56vw);
+  margin: 0 0 0 auto;
+  background-image: url(../../../images/lead__image.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

@@ -1,3 +1,8 @@
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 @mixin font ($weight, $size, $line-height) {
   font-weight: $weight;
   font-size: $size;
@@ -5,6 +10,7 @@
 }
 
 $font-black: #151515;
+$green: #24B47E;
 
 .page {
   width: 100%;
