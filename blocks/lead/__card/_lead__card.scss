@@ -1,0 +1,12 @@
+.lead__card {
+  @include size (440px, 300px);
+  background-color: #F4F4F4;
+  position: sticky;
+  top: 347px;
+  left: -200px;
+  display: none; /* flex */
+  align-items: center;
+  justify-content: center;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+}
