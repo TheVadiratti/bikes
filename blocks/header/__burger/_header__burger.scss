@@ -1,0 +1,16 @@
+.header__burger {
+  @include size (50px, 50px);
+  padding: 0;
+  display: none;
+  background-color: inherit;
+  background-image: url(../../../images/header__burger.svg);
+  background-size: 100%;
+  background-position: center;
+  border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__burger {
+    display: block;
+  }
+}

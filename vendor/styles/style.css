@@ -51,6 +51,11 @@
   margin-left: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .header__menu-item {
+    display: none;
+  }
+}
 .header__menu-link {
   text-decoration: none;
   color: #151515;
@@ -60,6 +65,23 @@
   opacity: 0.75;
 }
 
+.header__burger {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: none;
+  background-color: inherit;
+  background-image: url(../../../images/header__burger.svg);
+  background-size: 100%;
+  background-position: center;
+  border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__burger {
+    display: block;
+  }
+}
 .lead__title {
   width: 460px;
   height: auto;
