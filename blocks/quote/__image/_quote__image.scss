@@ -1,0 +1,4 @@
+.quote__image {
+  @include size (650px, 460px);
+  background-image: url(../../../images/quote__image.png);
+}

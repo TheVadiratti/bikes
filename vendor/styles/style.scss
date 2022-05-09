@@ -5,6 +5,7 @@
 @import '../../blocks/main/main';
 @import '../../blocks/lead/lead';
 @import '../../blocks/toggle-area/toggle-area';
+@import '../../blocks/quote/quote';
 
 // elements
 
@@ -26,6 +27,12 @@
 @import '../../blocks/toggle-area/__image/toggle-area__image.scss';
 @import '../../blocks/toggle-area/__toggle/toggle-area__toggle';
 @import '../../blocks/toggle-area/__switch/toggle-area__switch';
+
+@import '../../blocks/quote/__image/quote__image';
+@import '../../blocks/quote/__text/quote__text';
+@import '../../blocks/quote/__phrase/quote__phrase';
+@import '../../blocks/quote/__name/quote__name';
+@import '../../blocks/quote/__about-author/quote__about-author';
 
 // mod
 
