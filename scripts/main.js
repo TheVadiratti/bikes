@@ -33,6 +33,7 @@ function changeTheme() {
     item.classList.toggle('header__menu-link_theme_dark');
   })
   toggle.classList.toggle('toggle-area__toggle_theme_dark');
+  buttonMenu.classList.toggle('header__button_theme_dark');
 }
 
 themeToggle.addEventListener('click', changeTheme);

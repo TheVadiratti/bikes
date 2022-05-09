@@ -293,7 +293,6 @@
   margin: 0 2px 0;
   background-color: #24B47E;
   border-radius: 9999px;
-  transition: all 5s ease;
 }
 
 .page_theme_dark {
@@ -333,6 +332,11 @@
     background-size: 150%;
   }
 }
+.header__button_theme_dark {
+  background-color: #333;
+  transition: all 0.5s ease;
+}
+
 .toggle-area_opened {
   display: flex;
 }
