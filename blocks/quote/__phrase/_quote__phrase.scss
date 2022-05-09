@@ -1,4 +1,11 @@
 .quote__phrase {
   @include font (600, 34px, 44px);
+  letter-spacing: -0.5px;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .quote__phrase {
+    @include font (600, 23px, 29px);
+  }
 }

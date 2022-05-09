@@ -2,3 +2,9 @@
   @include font (500, 20px, 32px);
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .quote__name {
+    margin-top: 40px;
+  }
+}

@@ -62,6 +62,12 @@
        column-gap: 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .quote {
+    padding: 60px 18px 40px;
+    grid-template-columns: 1fr;
+  }
+}
 .header__menu {
   width: 83%;
   max-width: 1440px;
@@ -310,19 +316,40 @@
   background-image: url(../../../images/quote__image.png);
 }
 
+@media screen and (max-width: 768px) {
+  .quote__image {
+    width: 284px;
+    height: 208px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+  }
+}
 .quote__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .quote__text {
+    margin-top: 40px;
+  }
+}
 .quote__phrase {
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
+  letter-spacing: -0.5px;
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .quote__phrase {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
 .quote__name {
   font-weight: 500;
   font-size: 20px;
@@ -330,6 +357,11 @@
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .quote__name {
+    margin-top: 40px;
+  }
+}
 .quote__about-author {
   font-weight: 400;
   font-size: 16px;
@@ -337,6 +369,11 @@
   margin: 6px 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .quote__about-author {
+    margin-top: 4px;
+  }
+}
 .page_theme_dark {
   background-color: #333;
   color: #fff;
