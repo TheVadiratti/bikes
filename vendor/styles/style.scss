@@ -29,6 +29,10 @@
 
 // mod
 
+@import '../../blocks/page/_theme/page_theme_dark';
+
+@import '../../blocks/header/_theme/header_theme_dark';
+@import '../../blocks/header/__menu-link/_theme/header__menu-link_theme_dark';
 @import '../../blocks/header/_opened/header_opened';
 @import '../../blocks/header/__menu/_opened/header__menu_opened';
 @import '../../blocks/header/__button/_type/header__button_type_menu';
@@ -37,3 +41,4 @@
 @import '../../blocks/toggle-area/_opened/toggle-area_opened';
 @import '../../blocks/toggle-area/__image/_light/toggle-area__image_light';
 @import '../../blocks/toggle-area/__image/_dark/toggle-area__image_dark';
+@import '../../blocks/toggle-area/__toggle/_theme/toggle-area__toggle_theme_dark';

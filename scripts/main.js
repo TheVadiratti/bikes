@@ -2,6 +2,10 @@ const buttonMenu = document.querySelector('.header__button');
 const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header__menu');
 const toggleArea = document.querySelector('.toggle-area');
+const themeToggle = document.querySelector('.toggle-area__toggle');
+const toggle = document.querySelector('.toggle-area__toggle');
+const page = document.querySelector('.page');
+const headerLinks = document.querySelectorAll('.header__menu-link');
 
 function openMenu() {
   if (buttonMenu.classList.contains('header__button_type_menu')) {
@@ -21,3 +25,14 @@ function openMenu() {
 }
 
 buttonMenu.addEventListener('click', openMenu);
+
+function changeTheme() {
+  page.classList.toggle('page_theme_dark');
+  header.classList.toggle('header_theme_dark');
+  headerLinks.forEach(item => {
+    item.classList.toggle('header__menu-link_theme_dark');
+  })
+  toggle.classList.toggle('toggle-area__toggle_theme_dark');
+}
+
+themeToggle.addEventListener('click', changeTheme);
