@@ -6,6 +6,7 @@
 @import '../../blocks/lead/lead';
 @import '../../blocks/toggle-area/toggle-area';
 @import '../../blocks/quote/quote';
+@import '../../blocks/coverages/coverages';
 
 // elements
 
@@ -34,6 +35,13 @@
 @import '../../blocks/quote/__name/quote__name';
 @import '../../blocks/quote/__about-author/quote__about-author';
 
+@import '../../blocks/coverages/__heading/coverages__heading';
+@import '../../blocks/coverages/__description/coverages__description';
+@import '../../blocks/coverages/__carousel/coverages__carousel';
+@import '../../blocks/coverages/__images/coverages__images';
+@import '../../blocks/coverages/__image/coverages__image';
+@import '../../blocks/coverages/__button/coverages__button';
+
 // mod
 
 @import '../../blocks/page/_theme/page_theme_dark';
@@ -50,3 +58,6 @@
 @import '../../blocks/toggle-area/__image/_light/toggle-area__image_light';
 @import '../../blocks/toggle-area/__image/_dark/toggle-area__image_dark';
 @import '../../blocks/toggle-area/__toggle/_theme/toggle-area__toggle_theme_dark';
+
+@import '../../blocks/coverages/__button/_type/coverages__button_type_left';
+@import '../../blocks/coverages/__button/_type/coverages__button_type_right';
