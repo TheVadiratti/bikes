@@ -1,5 +1,6 @@
 .page {
   width: 100%;
+  max-width: 1440px;
   margin: auto;
   background-color: #f4f4f4;
   font-family: "Inter", "Arial", sans-serif;
@@ -66,14 +67,27 @@
 
 @media screen and (max-width: 768px) {
   .quote {
-    margin: 20px 18px 40px;
+    margin: 20px 18px 0;
+    padding-bottom: 40px;
     grid-template-columns: 1fr;
+    border-bottom: 1px solid #e3e3e3;
   }
 }
 .coverages {
+  display: flex;
+  flex-direction: column;
   margin: 60px 0 60px 120px;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages {
+    margin: 40px 18px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e3e3e3;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .header__menu {
   width: 83%;
   max-width: 1440px;
@@ -388,6 +402,15 @@
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages__heading {
+    flex: 50%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    order: 1;
+  }
+}
 .coverages__description {
   max-width: 460px;
   font-weight: 400;
@@ -398,10 +421,29 @@
   opacity: 0.7;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 40px;
+    order: 4;
+  }
+}
 .coverages__carousel {
   margin-top: 80px;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages__carousel {
+    margin-top: 40px;
+    order: 3;
+  }
+}
 .coverages__image {
   margin: 0 40px 0 0;
 }
@@ -410,10 +452,30 @@
   margin-right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages__image {
+    width: 284px;
+    height: 175px;
+  }
+}
+.coverages__buttons {
+  margin-top: 50px;
+  order: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__buttons {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
 .coverages__button {
   width: 50px;
   height: 50px;
-  margin: 50px 0 0 20px;
+  margin-left: 20px;
   padding: 0;
   border: none;
   border-radius: 50px;
@@ -432,6 +494,15 @@
   opacity: 0.6;
 }
 
+@media screen and (max-width: 768px) {
+  .coverages__button {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-size: 4.5px 10px;
+    display: inline-block;
+  }
+}
 .page_theme_dark {
   background-color: #333;
   color: #fff;

@@ -1,3 +1,15 @@
 .coverages {
+  display: flex;
+  flex-direction: column;
   margin: 60px 0 60px 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages {
+    margin: 40px 18px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e3e3e3;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

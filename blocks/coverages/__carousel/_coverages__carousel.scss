@@ -1,3 +1,14 @@
 .coverages__carousel {
   margin-top: 80px;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__carousel {
+    margin-top: 40px;
+    order: 3;
+  }
 }

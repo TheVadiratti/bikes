@@ -5,3 +5,9 @@
 .coverages__image:last-of-type {
   margin-right: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .coverages__image {
+    @include size (284px, 175px);
+  }
+}
