@@ -1,5 +1,5 @@
 .quote {
-  padding: 120px 120px 60px;
+  margin: 120px 120px 60px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 768px) {
   .quote {
-    padding: 60px 18px 40px;
+    margin: 60px 18px 40px;
     grid-template-columns: 1fr;
   }
 }
