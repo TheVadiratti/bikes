@@ -539,6 +539,10 @@
   cursor: pointer;
 }
 
+.bikes__button:hover {
+  opacity: 0.6;
+}
+
 .bikes__link {
   text-decoration: none;
   color: #151515;
@@ -646,4 +650,8 @@
 
 .bikes__button_active {
   font-weight: 600;
+}
+
+.bikes__button_active:hover {
+  opacity: 0.75;
 }
