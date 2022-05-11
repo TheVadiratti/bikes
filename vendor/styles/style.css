@@ -50,11 +50,9 @@
 }
 .card-bike {
   background-color: #F4F4F4;
-  display: none;
-  /* flex */
+  display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
 }
 
@@ -83,6 +81,16 @@
     border-bottom: 1px solid #e3e3e3;
   }
 }
+.section-heading {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .coverages {
   display: flex;
   flex-direction: column;
@@ -99,6 +107,17 @@
     flex-wrap: wrap;
   }
 }
+.bikes {
+  margin: 60px 120px 0;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: auto auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 120px;
+}
+
 .header__menu {
   width: 83%;
   max-width: 1440px;
@@ -291,11 +310,6 @@
     grid-row-end: 3;
   }
 }
-.card-bike__image {
-  width: 340px;
-  height: 260px;
-}
-
 .toggle-area__image {
   width: 28px;
   height: 28px;
@@ -498,6 +512,45 @@
     display: inline-block;
   }
 }
+.bikes__menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bikes__menu-item {
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+.bikes__menu-item:first-of-type {
+  margin-left: 0;
+}
+
+.bikes__button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.bikes__link {
+  text-decoration: none;
+  color: #151515;
+}
+
+.bikes__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 22px 0 0;
+}
+
 .page_theme_dark {
   background-color: #333;
   color: #fff;
@@ -543,10 +596,27 @@
 .card-bike_place_lead {
   width: 440px;
   height: 300px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   position: -webkit-sticky;
   position: sticky;
   top: 347px;
   left: -200px;
+}
+
+.card-bike_place_bikes {
+  width: 380px;
+  height: 380px;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+}
+
+.card-bike__image_place_lead {
+  width: 340px;
+  height: 260px;
+}
+
+.card-bike__image_place_bikes {
+  width: 340px;
+  height: 340px;
 }
 
 .toggle-area_opened {
@@ -572,4 +642,8 @@
 
 .coverages__button_type_right {
   background-image: url(../../../../images/coverages__button_type_right.svg);
+}
+
+.bikes__button_active {
+  font-weight: 600;
 }

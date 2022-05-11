@@ -1,0 +1,7 @@
+.bikes__button {
+  @include font (400, 18px, 28px);
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

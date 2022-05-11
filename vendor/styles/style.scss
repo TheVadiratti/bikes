@@ -7,7 +7,9 @@
 @import '../../blocks/card-bike/card-bike';
 @import '../../blocks/toggle-area/toggle-area';
 @import '../../blocks/quote/quote';
+@import '../../blocks/section-heading/section-heading';
 @import '../../blocks/coverages/coverages';
+@import '../../blocks/bikes/bikes';
 
 // elements
 
@@ -43,6 +45,12 @@
 @import '../../blocks/coverages/__buttons/coverages__buttons';
 @import '../../blocks/coverages/__button/coverages__button';
 
+@import '../../blocks/bikes/__menu/bikes__menu';
+@import '../../blocks/bikes/__menu-item/bikes__menu-item';
+@import '../../blocks/bikes/__button/bikes__button';
+@import '../../blocks/bikes/__link/bikes__link';
+@import '../../blocks/bikes/__name/bikes__name';
+
 // mod
 
 @import '../../blocks/page/_theme/page_theme_dark';
@@ -57,6 +65,8 @@
 
 @import '../../blocks/card-bike/_place/card-bike_place_lead';
 @import '../../blocks/card-bike/_place/_card-bike_place_bikes';
+@import '../../blocks/card-bike/__image/_place/card-bike__image_place_lead';
+@import '../../blocks/card-bike/__image/_place/card-bike__image_place_bikes';
 
 @import '../../blocks/toggle-area/_opened/toggle-area_opened';
 @import '../../blocks/toggle-area/__image/_light/toggle-area__image_light';
@@ -65,3 +75,5 @@
 
 @import '../../blocks/coverages/__button/_type/coverages__button_type_left';
 @import '../../blocks/coverages/__button/_type/coverages__button_type_right';
+
+@import '../../blocks/bikes/__button/_active/bikes__button_active';
