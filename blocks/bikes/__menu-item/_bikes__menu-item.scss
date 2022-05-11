@@ -1,0 +1,9 @@
+.bikes__menu-item {
+  @include font (400, 18px, 28px);
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+.bikes__menu-item:first-of-type {
+  margin-left: 0;
+}

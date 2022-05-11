@@ -1,0 +1,7 @@
+.section-heading {
+  @include font (700, 55px, 60px);
+  letter-spacing: -0.5px;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}

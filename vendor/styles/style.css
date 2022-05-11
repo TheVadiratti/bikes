@@ -48,6 +48,16 @@
     border-bottom: 1px solid #e3e3e3;
   }
 }
+.card-bike {
+  background-color: #F4F4F4;
+  display: none;
+  /* flex */
+  align-items: center;
+  justify-content: center;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+}
+
 .toggle-area {
   width: auto;
   height: 28px;
@@ -76,7 +86,8 @@
 .coverages {
   display: flex;
   flex-direction: column;
-  margin: 60px 0 60px 120px;
+  margin: 60px 0 0 120px;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -280,23 +291,7 @@
     grid-row-end: 3;
   }
 }
-.lead__card {
-  width: 440px;
-  height: 300px;
-  background-color: #F4F4F4;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 347px;
-  left: -200px;
-  display: none;
-  /* flex */
-  align-items: center;
-  justify-content: center;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-  border-radius: 20px;
-}
-
-.lead__card-photo {
+.card-bike__image {
   width: 340px;
   height: 260px;
 }
@@ -543,6 +538,15 @@
 .header__button_theme_dark {
   background-color: #333;
   transition: all 0.5s ease;
+}
+
+.card-bike_place_lead {
+  width: 440px;
+  height: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 347px;
+  left: -200px;
 }
 
 .toggle-area_opened {
