@@ -9,3 +9,9 @@
 .bikes__button:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 768px) {
+  .bikes__button {
+    @include font (600, 11px, 14px);
+  }
+}
