@@ -12,3 +12,9 @@
 .trainings__link:hover {
   opacity: 0.75;
 }
+
+@media screen and (max-width: 768px) {
+  .trainings__link {
+    @include font (600, 14px, 20px);
+  }
+}
