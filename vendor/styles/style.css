@@ -105,6 +105,16 @@
     grid-column-end: 2;
   }
 }
+.section-description {
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 50px 0 0;
+  color: #222;
+  opacity: 0.7;
+}
+
 .coverages {
   display: flex;
   flex-direction: column;
@@ -144,6 +154,16 @@
     row-gap: 0;
   }
 }
+.trainings {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 460px;
+  -moz-column-gap: 160px;
+       column-gap: 160px;
+  margin: 150px 120px 0;
+  padding-bottom: 120px;
+}
+
 .header__menu {
   width: 83%;
   max-width: 1440px;
@@ -446,16 +466,6 @@
     order: 1;
   }
 }
-.coverages__description {
-  max-width: 460px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  margin: 50px 0 0;
-  color: #222;
-  opacity: 0.7;
-}
-
 @media screen and (max-width: 768px) {
   .coverages__description {
     font-weight: 400;
@@ -598,6 +608,38 @@
   font-size: 18px;
   line-height: 22px;
   margin: 22px 0 0;
+}
+
+.trainings__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainings__links {
+  margin: auto 0 0 0;
+}
+
+.trainings__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #151515;
+  margin-left: 30px;
+}
+
+.trainings__link:first-of-type {
+  margin-left: 0;
+}
+
+.trainings__link:hover {
+  opacity: 0.75;
+}
+
+.trainings__image {
+  width: 580px;
+  height: 460px;
+  background-image: url(../../../images/trainings__image.png);
 }
 
 .page_theme_dark {

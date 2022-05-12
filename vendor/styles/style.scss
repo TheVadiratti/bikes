@@ -8,8 +8,10 @@
 @import '../../blocks/toggle-area/toggle-area';
 @import '../../blocks/quote/quote';
 @import '../../blocks/section-heading/section-heading';
+@import '../../blocks/section-description/_section-description.scss';
 @import '../../blocks/coverages/coverages';
 @import '../../blocks/bikes/bikes';
+@import '../../blocks/trainings/trainings';
 
 // elements
 
@@ -50,6 +52,11 @@
 @import '../../blocks/bikes/__button/bikes__button';
 @import '../../blocks/bikes/__link/bikes__link';
 @import '../../blocks/bikes/__name/bikes__name';
+
+@import '../../blocks/trainings/__text/trainings__text';
+@import '../../blocks/trainings/__links/trainings__links';
+@import '../../blocks/trainings/__link/trainings__link';
+@import '../../blocks/trainings/__image/trainings__image';
 
 // mod
 

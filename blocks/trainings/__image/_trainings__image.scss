@@ -1,0 +1,4 @@
+.trainings__image {
+  @include size (580px, 460px);
+  background-image: url(../../../images/trainings__image.png);
+}
