@@ -12,7 +12,6 @@
   width: 100%;
   height: 74px;
   background-color: #F4F4F4;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -23,18 +22,20 @@
 
 @media screen and (max-width: 1280px) {
   .header {
+    position: -webkit-sticky;
+    position: sticky;
     padding: 0;
     flex-direction: column-reverse;
     transition: all 0.5s ease;
   }
 }
 .main {
-  margin-top: 74px;
+  margin-top: 20px;
   max-width: 1440px;
 }
 
 .lead {
-  margin: 20px 0 0 120px;
+  margin-left: 120px;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(5, auto);
@@ -71,7 +72,8 @@
 }
 
 .quote {
-  margin: 120px 120px 60px;
+  margin: 120px 120px 0;
+  padding-bottom: 60px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
@@ -107,7 +109,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  margin: 0;
+  margin: 50px 0 0;
   color: #222;
   opacity: 0.7;
 }
@@ -162,10 +164,9 @@
 .trainings {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto auto 1fr;
   -moz-column-gap: 160px;
        column-gap: 160px;
-  row-gap: 50px;
   margin: 150px 120px 0;
   padding-bottom: 120px;
 }
@@ -212,7 +213,7 @@
   }
 }
 .header__menu-item {
-  margin-left: 39px;
+  margin-left: 34px;
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
@@ -360,8 +361,8 @@
 }
 
 .lead__image {
-  width: 42.5vw;
-  height: 56vw;
+  width: 42.4vw;
+  height: 58.1vw;
   margin: 0 0 0 auto;
   background-image: url(../../../images/lead__image.png);
   background-position: center;
@@ -580,7 +581,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
@@ -635,7 +636,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  margin: 22px 0 0;
+  margin: 22px 0 0 6px;
 }
 
 .trainings__links {
@@ -807,6 +808,11 @@
     grid-column-end: 2;
   }
 }
+.section-heading_place_lead {
+  max-width: 460px;
+  margin-top: 60px;
+}
+
 @media screen and (max-width: 768px) {
   .section-description_place_trainings {
     margin: 0;
