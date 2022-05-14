@@ -1,0 +1,14 @@
+.toggle-area_place_footer {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto 0 auto auto;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-area_place_footer {
+    display: none;
+  }
+}

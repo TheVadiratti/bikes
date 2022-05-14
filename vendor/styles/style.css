@@ -1,6 +1,5 @@
 .page {
   width: 100%;
-  max-width: 1440px;
   margin: auto;
   background-color: #f4f4f4;
   font-family: "Inter", "Arial", sans-serif;
@@ -31,6 +30,7 @@
 }
 .main {
   margin-top: 74px;
+  max-width: 1440px;
 }
 
 .lead {
@@ -177,6 +177,19 @@
     row-gap: 40px;
     margin: 40px 18px 0;
     padding-bottom: 60px;
+  }
+}
+.footer {
+  background-color: #efefef;
+  padding: 80px 120px 60px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 60px 18px 25px;
   }
 }
 .header__menu {
@@ -673,6 +686,75 @@
     grid-row-end: 3;
   }
 }
+.footer__form-heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 229px;
+  margin: 0;
+}
+
+.footer__form {
+  margin-top: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer__input {
+  width: 360px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: #151515;
+  padding: 11px 0 11px 20px;
+  background-color: inherit;
+  border: 1px solid #C7C7C7;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__input {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+  }
+}
+.footer__copyright {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CFCFCF;
+  margin-top: 100px;
+}
+
+.footer__button {
+  display: none;
+  width: 38px;
+  height: 38px;
+  margin: auto 0 0 auto;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  background-image: url(../../../images/footer__button.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__button {
+    display: block;
+  }
+}
 .page_theme_dark {
   background-color: #333;
   color: #fff;
@@ -785,6 +867,20 @@
   justify-content: flex-end;
 }
 
+.toggle-area_place_footer {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto 0 auto auto;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-area_place_footer {
+    display: none;
+  }
+}
 .coverages__button_type_left {
   background-image: url(../../../../images/coverages__button_type_left.svg);
 }

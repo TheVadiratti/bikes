@@ -1,0 +1,21 @@
+.footer__button {
+  display: none;
+  @include size (38px, 38px);
+  margin: auto 0 0 auto;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  background-image: url(../../../images/footer__button.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__button {
+    display: block;
+  }
+}
