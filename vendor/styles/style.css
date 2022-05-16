@@ -825,8 +825,8 @@
 .card-bike_animation {
   -webkit-animation-name: cardBikeScroll;
           animation-name: cardBikeScroll;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
