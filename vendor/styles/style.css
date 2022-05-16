@@ -800,6 +800,36 @@
   transition: all 0.5s ease;
 }
 
+@-webkit-keyframes Loading {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes Loading {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.lead__button_animation {
+  background-image: linear-gradient(to left, transparent, transparent 50%, #319E75 50%, #319E75);
+  background-size: 200% 100%;
+  -webkit-animation-name: Loading;
+          animation-name: Loading;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 @-webkit-keyframes cardBikeScroll {
   from {
     top: 347px;

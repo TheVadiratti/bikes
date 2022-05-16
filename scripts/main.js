@@ -8,6 +8,7 @@ const toggleFooter = document.querySelector('.toggle-area__toggle_place_footer')
 const page = document.querySelector('.page');
 const headerLinks = document.querySelectorAll('.header__menu-link');
 const cardBikeLead = document.querySelector('.card-bike_place_lead');
+const leadButton = document.querySelector('.lead__button');
 
 function openMenu() {
   if (buttonMenu.classList.contains('header__button_type_menu')) {
@@ -49,3 +50,9 @@ function cardBikeAnimation() {
 }
 
 document.addEventListener('scroll', cardBikeAnimation);
+
+function loading() {
+  leadButton.classList.add('lead__button_animation');
+}
+
+leadButton.addEventListener('click', loading);

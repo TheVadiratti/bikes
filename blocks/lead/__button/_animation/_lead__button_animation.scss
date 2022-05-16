@@ -1,0 +1,16 @@
+@keyframes Loading {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.lead__button_animation {
+  background-image: linear-gradient(to left,transparent,transparent 50%,#319E75 50%,#319E75);
+  background-size: 200% 100%;
+  animation-name: Loading;
+  animation-duration: 10s;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 1s;
+}
