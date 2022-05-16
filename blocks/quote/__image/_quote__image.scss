@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 768px) {
   .quote__image {
-    @include size (284px, 208px);
+    @include size (284px, 204px);
     background-size: 110%;
     background-repeat: no-repeat;
   }

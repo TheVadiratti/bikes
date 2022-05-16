@@ -6,6 +6,7 @@ const themeToggle = document.querySelector('.toggle-area__toggle');
 const toggle = document.querySelector('.toggle-area__toggle');
 const page = document.querySelector('.page');
 const headerLinks = document.querySelectorAll('.header__menu-link');
+const cardBikeLead = document.querySelector('.card-bike_place_lead');
 
 function openMenu() {
   if (buttonMenu.classList.contains('header__button_type_menu')) {
@@ -37,3 +38,9 @@ function changeTheme() {
 }
 
 themeToggle.addEventListener('click', changeTheme);
+
+function cardBikeAnimation() {
+  cardBikeLead.classList.add('card-bike_animation');
+}
+
+document.addEventListener('scroll', cardBikeAnimation);

@@ -1,6 +1,7 @@
 .trainings__image {
   @include size (580px, 460px);
   background-image: url(../../../images/trainings__image.png);
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;

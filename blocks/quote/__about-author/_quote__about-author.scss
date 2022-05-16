@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 768px) {
   .quote__about-author {
+    @include font (400, 10px, 16px);
     margin-top: 4px;
   }
 }

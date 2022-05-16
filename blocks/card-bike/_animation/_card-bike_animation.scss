@@ -1,0 +1,16 @@
+@keyframes cardBikeScroll {
+  from {
+    top: 347px;
+  }
+  
+  to {
+    top: 477px;
+  }
+}
+
+.card-bike_animation {
+  animation-name: cardBikeScroll;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

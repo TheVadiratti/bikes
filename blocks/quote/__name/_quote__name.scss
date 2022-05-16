@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 768px) {
   .quote__name {
+    @include font (500, 14px, 22px);
     margin-top: 40px;
   }
 }
