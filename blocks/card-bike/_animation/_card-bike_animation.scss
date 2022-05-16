@@ -14,3 +14,9 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 768px) {
+  .card-bike_animation {
+    animation: none;
+  }
+}

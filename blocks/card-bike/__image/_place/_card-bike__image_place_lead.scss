@@ -1,3 +1,9 @@
 .card-bike__image_place_lead {
   @include size (340px, 260px);
 }
+
+@media screen and (max-width: 768px) {
+  .card-bike__image_place_lead {
+    @include size (181px, 139px);
+  }
+}

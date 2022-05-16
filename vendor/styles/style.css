@@ -57,12 +57,6 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .card-bike {
-    width: 284px;
-    height: 306px;
-  }
-}
 .toggle-area {
   width: auto;
   height: 28px;
@@ -834,6 +828,12 @@
           animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 768px) {
+  .card-bike_animation {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 .section-heading_place_bikes {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -850,6 +850,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section-heading_place_lead {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   .section-description_place_trainings {
     margin: 0;
   }
@@ -863,6 +868,14 @@
   left: -200px;
 }
 
+@media screen and (max-width: 768px) {
+  .card-bike_place_lead {
+    width: 234px;
+    height: 160px;
+    top: 151px;
+    left: -30px;
+  }
+}
 .card-bike_place_bikes {
   width: 380px;
   height: 380px;
@@ -880,6 +893,12 @@
   height: 260px;
 }
 
+@media screen and (max-width: 768px) {
+  .card-bike__image_place_lead {
+    width: 181px;
+    height: 139px;
+  }
+}
 .card-bike__image_place_bikes {
   width: 340px;
   height: 340px;
