@@ -2,8 +2,9 @@ const buttonMenu = document.querySelector('.header__button');
 const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header__menu');
 const toggleArea = document.querySelector('.toggle-area');
-const themeToggle = document.querySelector('.toggle-area__toggle');
-const toggle = document.querySelector('.toggle-area__toggle');
+const themeToggles = document.querySelectorAll('.toggle-area__toggle');
+const toggleHeader = document.querySelector('.toggle-area__toggle_place_header');
+const toggleFooter = document.querySelector('.toggle-area__toggle_place_footer');
 const page = document.querySelector('.page');
 const headerLinks = document.querySelectorAll('.header__menu-link');
 const cardBikeLead = document.querySelector('.card-bike_place_lead');
@@ -33,11 +34,15 @@ function changeTheme() {
   headerLinks.forEach(item => {
     item.classList.toggle('header__menu-link_theme_dark');
   })
-  toggle.classList.toggle('toggle-area__toggle_theme_dark');
+  toggleHeader.classList.toggle('toggle-area__toggle_theme_dark');
+  toggleFooter.classList.toggle('toggle-area__toggle_theme_dark');
   buttonMenu.classList.toggle('header__button_theme_dark');
 }
 
-themeToggle.addEventListener('click', changeTheme);
+themeToggles.forEach(item => {
+  item.addEventListener('click', changeTheme);
+})
+  
 
 function cardBikeAnimation() {
   cardBikeLead.classList.add('card-bike_animation');
