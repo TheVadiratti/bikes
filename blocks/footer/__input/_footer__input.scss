@@ -1,13 +1,28 @@
 .footer__input {
-  @include size (360px, 50px);
+  @include size (316px, 50px);
   @include font (500, 13px, 28px);
-  color: #151515;
   padding: 11px 0 11px 20px;
   background-color: inherit;
-  border: 1px solid #C7C7C7;
+  border: none;
   box-sizing: border-box;
-  border-radius: 4px;
-  opacity: 0.5;
+  outline: none;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color:#151515;
+}
+.footer__input::-moz-placeholder {
+  color:#151515;
+}
+.footer__input:-moz-placeholder {
+  color:#151515;
+}
+.footer__input:-ms-input-placeholder {
+  color:#151515;
+}
+
+.footer__input:focus ~ .footer__submit {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {

@@ -13,6 +13,11 @@
 
 .coverages__button:first-of-type {
   margin-left: 0;
+  background-image: url(../../../../images/coverages__button_type_left.svg);
+}
+
+.coverages__button:last-of-type {
+  background-image: url(../../../../images/coverages__button_type_right.svg);
 }
 
 .coverages__button:hover {

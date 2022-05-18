@@ -1,14 +1,21 @@
 const buttonMenu = document.querySelector('.header__button');
 const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header__menu');
+const headerLinks = document.querySelectorAll('.header__menu-link');
 const toggleArea = document.querySelector('.toggle-area');
 const themeToggles = document.querySelectorAll('.toggle-area__toggle');
 const toggleHeader = document.querySelector('.toggle-area__toggle_place_header');
 const toggleFooter = document.querySelector('.toggle-area__toggle_place_footer');
+const sectionDescriptions = document.querySelectorAll('.section-description');
 const page = document.querySelector('.page');
-const headerLinks = document.querySelectorAll('.header__menu-link');
+const trainingsLinks = document.querySelectorAll('.trainings__link');
+const bikesLinks = document.querySelectorAll('.bikes__name');
 const cardBikeLead = document.querySelector('.card-bike_place_lead');
 const leadButton = document.querySelector('.lead__button');
+const okButton = document.querySelector('.footer__submit');
+const footer = document.querySelector('.footer');
+const footerInput = document.querySelector('.footer__input');
+const coveragesButtons = document.querySelectorAll('.coverages__button');
 
 function openMenu() {
   if (buttonMenu.classList.contains('header__button_type_menu')) {
@@ -38,6 +45,20 @@ function changeTheme() {
   toggleHeader.classList.toggle('toggle-area__toggle_theme_dark');
   toggleFooter.classList.toggle('toggle-area__toggle_theme_dark');
   buttonMenu.classList.toggle('header__button_theme_dark');
+  sectionDescriptions.forEach(item => {
+    item.classList.toggle('section-description_theme_dark');
+  })
+  trainingsLinks.forEach(item => {
+    item.classList.toggle('trainings__link_theme_dark');
+  })
+  footer.classList.toggle('footer_theme_dark');
+  bikesLinks.forEach(item => {
+    item.classList.toggle('bikes__name_theme_dark');
+  })
+  footerInput.classList.toggle('footer__input_theme_dark');
+  coveragesButtons.forEach(item => {
+    item.classList.toggle('coverages__button_theme_dark');
+  })
 }
 
 themeToggles.forEach(item => {

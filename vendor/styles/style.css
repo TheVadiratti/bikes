@@ -562,6 +562,11 @@
 
 .coverages__button:first-of-type {
   margin-left: 0;
+  background-image: url(../../../../images/coverages__button_type_left.svg);
+}
+
+.coverages__button:last-of-type {
+  background-image: url(../../../../images/coverages__button_type_right.svg);
 }
 
 .coverages__button:hover {
@@ -614,6 +619,7 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
+  color: inherit;
 }
 
 .bikes__button:hover {
@@ -704,19 +710,45 @@
   grid-row-end: 3;
 }
 
+.footer__input-cnt {
+  min-width: 360px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+}
+
 .footer__input {
-  width: 360px;
+  width: 316px;
   height: 50px;
   font-weight: 500;
   font-size: 13px;
   line-height: 28px;
-  color: #151515;
   padding: 11px 0 11px 20px;
   background-color: inherit;
-  border: 1px solid #C7C7C7;
+  border: none;
   box-sizing: border-box;
-  border-radius: 4px;
-  opacity: 0.5;
+  outline: none;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #151515;
+}
+
+.footer__input::-moz-placeholder {
+  color: #151515;
+}
+
+.footer__input:-moz-placeholder {
+  color: #151515;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #151515;
+}
+
+.footer__input:focus ~ .footer__submit {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -726,6 +758,21 @@
     width: 100%;
   }
 }
+.footer__submit {
+  width: 16px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  margin-right: 11px;
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 .footer__copyright {
   grid-row-start: 3;
   grid-row-end: 4;
@@ -889,6 +936,10 @@
     margin: 0;
   }
 }
+.section-description_theme_dark {
+  color: #fff;
+}
+
 .card-bike_place_lead {
   width: 440px;
   height: 300px;
@@ -971,12 +1022,24 @@
     display: none;
   }
 }
-.coverages__button_type_left {
-  background-image: url(../../../../images/coverages__button_type_left.svg);
+.coverages__button_theme_dark {
+  background-color: #434343;
 }
 
-.coverages__button_type_right {
-  background-image: url(../../../../images/coverages__button_type_right.svg);
+.coverages__button_theme_dark:nth-of-type(1) {
+  background-image: url(../../../../images/coverages__button_type_left_dark.svg);
+}
+
+.coverages__button_theme_dark:nth-of-type(2) {
+  background-image: url(../../../../images/coverages__button_type_right_dark.svg);
+}
+
+.bikes__name_theme_dark {
+  color: #fff;
+}
+
+.trainings__link_theme_dark {
+  color: #fff;
 }
 
 .bikes__button_active {
@@ -985,6 +1048,34 @@
 
 .bikes__button_active:hover {
   opacity: 0.75;
+}
+
+.footer_theme_dark {
+  background-color: #2F2F2F;
+}
+
+.footer__input_theme_dark {
+  color: #fff;
+}
+
+.footer__input_theme_dark::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer__input_theme_dark::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer__input_theme_dark:-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer__input_theme_dark:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
 }
 
 .dn {
