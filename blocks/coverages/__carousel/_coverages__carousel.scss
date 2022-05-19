@@ -3,7 +3,7 @@
   width: auto;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

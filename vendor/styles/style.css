@@ -509,7 +509,7 @@
   width: auto;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -519,7 +519,20 @@
   }
 }
 .coverages__image {
+  width: 650px;
+  height: 400px;
   margin: 0 40px 0 0;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s linear;
+}
+
+.coverages__image:nth-of-type(1) {
+  background-image: url(../../../images/coverages/highway/image1.png);
+}
+
+.coverages__image:nth-of-type(2) {
+  background-image: url(../../../images/coverages/highway/image2.png);
 }
 
 .coverages__image:last-of-type {
@@ -532,6 +545,16 @@
     height: 175px;
   }
 }
+.coverages__way-icon {
+  width: 100px;
+  height: 40px;
+  background-image: url(../../../images/coverages/highway/way-icon.svg);
+  position: relative;
+  top: 344px;
+  left: 0;
+  transition: all 2s linear;
+}
+
 .coverages__buttons {
   margin-top: 50px;
   order: 2;
@@ -558,15 +581,6 @@
   background-position: center;
   background-size: 7px 16px;
   cursor: pointer;
-}
-
-.coverages__button:first-of-type {
-  margin-left: 0;
-  background-image: url(../../../../images/coverages__button_type_left.svg);
-}
-
-.coverages__button:last-of-type {
-  background-image: url(../../../../images/coverages__button_type_right.svg);
 }
 
 .coverages__button:hover {
@@ -1022,6 +1036,15 @@
     display: none;
   }
 }
+.coverages__button_type_back {
+  margin-left: 0;
+  background-image: url(../../../../images/coverages__button_type_left.svg);
+}
+
+.coverages__button_type_forward {
+  background-image: url(../../../../images/coverages__button_type_right.svg);
+}
+
 .coverages__button_theme_dark {
   background-color: #434343;
 }
