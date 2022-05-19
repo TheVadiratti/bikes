@@ -85,9 +85,9 @@ function loading() {
 
 leadButton.addEventListener('click', loading);
 
-// Объект с данными Coverages
+// Массив с данными Coverages
 
-let dataCoverages = [
+const dataCoverages = [
   
   // highway
   {
@@ -154,3 +154,91 @@ function forward() {
 }
 
 buttonForward.addEventListener('click', forward);
+
+// Массив с данными Bikes
+
+const dataBikes = [
+
+  // highway
+  {
+    nameOne: "Cervelo Caledonia-5",
+    bikeOne: "../images/bikes/Carvelo_Caledonia-5.png",
+    nameTwo: "Cannondale Systemsix Himod",
+    bikeTwo: "../images/bikes/Cannondale_Systemsix_Himod.png",
+    nameThree: "Cervelo Caledonia-5",
+    bikeThree: "../images/bikes/Trek_Domane_SL-7.png"
+  },
+
+  // gravel
+  {
+    nameOne: "Cervelo Aspero GRX 810",
+    bikeOne: "../images/bikes/Cervelo_Aspero_GRX_810.png",
+    nameTwo: "Specialized S-Works Diverge",
+    bikeTwo: "../images/bikes/Specialized_S-Works_Diverge.png",
+    nameThree: "Cannondale Topstone Lefty 3",
+    bikeThree: "../images/bikes/Cannondale_Topstone_Lefty_3.png"
+  },
+
+  // TT
+  {
+    nameOne: "Specialized S-Works Shiv",
+    bikeOne: "../images/bikes/Specialized_S-Works_Shiv.png",
+    nameTwo: "BMC Timemachine 01 ONE",
+    bikeTwo: "../images/bikes/BMC_Timemachine_01_ONE.png",
+    nameThree: "Cervelo P-Series",
+    bikeThree: "../images/bikes/Cervelo_P-Series.png"
+  }
+]
+
+// Переключатель Bikes
+
+const bikesButtons = document.querySelectorAll('.bikes__button');
+const bikesImages = document.querySelectorAll('.card-bike__image_place_bikes');
+const bikesName = document.querySelectorAll('.bikes__name');
+let n;
+
+bikesButtons.forEach(item => {
+  item.addEventListener('click', function (event) {
+
+    // Проверка нажатия на уже активный вариант
+    if (!event.target.classList.contains('.bikes__button_active')) {
+
+      // Удаление модификатора активного пункта
+      document.querySelector('.bikes__button_active').classList.remove('bikes__button_active');
+
+      // Добавление модификатора активного пункта
+      event.target.classList.add('bikes__button_active');
+
+      // Изменение карточек
+      switch (event.target.textContent) {
+        case 'Шоссе':
+          n = 0;
+          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+          bikesName[0].textContent = dataBikes[n].nameOne;
+          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+          bikesName[1].textContent = dataBikes[n].nameTwo;
+          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+          bikesName[2].textContent = dataBikes[n].nameThree;
+          break;
+        case 'Грэвел':
+          n = 1;
+          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+          bikesName[0].textContent = dataBikes[n].nameOne;
+          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+          bikesName[1].textContent = dataBikes[n].nameTwo;
+          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+          bikesName[2].textContent = dataBikes[n].nameThree;
+          break;
+        case 'ТТ':
+          n = 2;
+          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+          bikesName[0].textContent = dataBikes[n].nameOne;
+          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+          bikesName[1].textContent = dataBikes[n].nameTwo;
+          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+          bikesName[2].textContent = dataBikes[n].nameThree;
+          break;
+      }
+    }   
+  })
+})
