@@ -1,6 +1,5 @@
 .page {
   width: 100%;
-  max-width: 1440px;
   margin: auto;
   background-color: #f4f4f4;
   font-family: "Inter", "Arial", sans-serif;
@@ -31,7 +30,7 @@
   }
 }
 .main {
-  margin-top: 20px;
+  margin: 20px auto 0;
   max-width: 1440px;
 }
 
