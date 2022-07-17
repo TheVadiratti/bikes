@@ -137,23 +137,23 @@ function coveragesLoad(score) {
   coveragesWayIcon.style.backgroundImage = dataCoverages[score].wayIcon;
 }
 
-function back() {
+function returnCoverage() {
   if (i > 0) {
     i = i - 1;
     coveragesLoad(i);
   }
 }
 
-buttonBack.addEventListener('click', back);
+buttonBack.addEventListener('click', returnCoverage);
 
-function forward() {
+function nextCoverage() {
   if (i < 2) {
     i = i + 1;
     coveragesLoad(i);
   }
 }
 
-buttonForward.addEventListener('click', forward);
+buttonForward.addEventListener('click', nextCoverage);
 
 // Массив с данными Bikes
 
