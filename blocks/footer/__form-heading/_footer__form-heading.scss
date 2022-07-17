@@ -3,3 +3,10 @@
   max-width: 229px;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__form-heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
