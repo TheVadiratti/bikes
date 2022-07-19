@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .bikes__card-area {
+    display: none;
+  }
+
+  .bikes__card-area:first-of-type {
+    display: block;
+    margin-top: 20px;
+  }
+}

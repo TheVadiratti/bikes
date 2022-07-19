@@ -10,5 +10,10 @@
 @media screen and (max-width: 768px) {
   .bikes__menu-item {
     margin-left: 0;
+    display: none;
+  }
+
+  .bikes__menu-item:first-of-type {
+    display: block;
   }
 }

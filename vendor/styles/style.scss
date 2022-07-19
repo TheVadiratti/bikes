@@ -49,8 +49,11 @@
 @import '../../blocks/coverages/__buttons/coverages__buttons';
 @import '../../blocks/coverages/__button/coverages__button';
 
-@import '../../blocks/bikes/__menu/bikes__menu';
+@import '../../blocks/bikes/__menu-pc/bikes__menu-pc';
+@import '../../blocks/bikes/__menu-mobile/bikes__menu-mobile';
+@import '../../blocks/bikes/__option/bikes__option';
 @import '../../blocks/bikes/__menu-item/bikes__menu-item';
+@import '../../blocks/bikes/__card-area/bikes__card-area';
 @import '../../blocks/bikes/__button/bikes__button';
 @import '../../blocks/bikes/__link/bikes__link';
 @import '../../blocks/bikes/__name/bikes__name';

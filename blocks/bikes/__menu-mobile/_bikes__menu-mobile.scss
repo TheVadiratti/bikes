@@ -1,0 +1,15 @@
+.bikes__menu-mobile {
+  display: none;
+  @include font(600, 11px, 14px);
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__menu-mobile {
+    display: block;
+    @include size(114px, 30px);
+    margin-top: 40px;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+}
