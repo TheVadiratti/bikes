@@ -116,6 +116,13 @@
     margin-top: 40px;
   }
 }
+.slider-indicator {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 36px auto 0;
+}
+
 .coverages {
   display: flex;
   flex-direction: column;
@@ -643,10 +650,6 @@
     background-color: #fff;
   }
 }
-.bikes__option {
-  margin: auto auto auto 120px;
-}
-
 .bikes__menu-item {
   margin-left: 40px;
   list-style-type: none;
@@ -885,6 +888,14 @@
     display: block;
   }
 }
+.slider-indicator__point {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #CACACA;
+}
+
 .page_theme_dark {
   background-color: #333;
   color: #fff;
@@ -1165,6 +1176,10 @@
 .footer__input_theme_dark:-ms-input-placeholder {
   color: #fff;
   opacity: 0.5;
+}
+
+.slider-indicator__point_active {
+  background-color: #151515;
 }
 
 .dn {
