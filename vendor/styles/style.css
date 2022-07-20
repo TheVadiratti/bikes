@@ -117,12 +117,18 @@
   }
 }
 .slider-indicator {
+  display: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 36px auto 0;
 }
 
+@media screen and (max-width: 768px) {
+  .slider-indicator {
+    display: block;
+  }
+}
 .coverages {
   display: flex;
   flex-direction: column;
