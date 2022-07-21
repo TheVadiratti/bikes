@@ -192,9 +192,9 @@ const dataBikes = [
 
 // Переключатель Bikes
 
-const bikesButtons = document.querySelectorAll('.bikes__button');
-const bikesImages = document.querySelectorAll('.card-bike__image_place_bikes');
-const bikesName = document.querySelectorAll('.bikes__name');
+const bikesButtons = Array.from(document.querySelectorAll('.bikes__button'));
+const bikesImages = Array.from(document.querySelectorAll('.card-bike__image_place_bikes'));
+const bikesName = Array.from(document.querySelectorAll('.bikes__name'));
 let n;
 
 bikesButtons.forEach(item => {
@@ -241,4 +241,40 @@ bikesButtons.forEach(item => {
       }
     }   
   })
+})
+
+const optionElements = Array.from(document.querySelectorAll('.bikes__select'));
+const selectElement = document.querySelector('.bikes__menu-mobile');
+
+selectElement.addEventListener('change', () => {
+  // Изменение карточек
+  switch (selectElement.value) {
+    case 'Шоссе':
+      n = 0;
+      bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+      bikesName[0].textContent = dataBikes[n].nameOne;
+      bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+      bikesName[1].textContent = dataBikes[n].nameTwo;
+      bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+      bikesName[2].textContent = dataBikes[n].nameThree;
+      break;
+    case 'Грэвел':
+      n = 1;
+      bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+      bikesName[0].textContent = dataBikes[n].nameOne;
+      bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+      bikesName[1].textContent = dataBikes[n].nameTwo;
+      bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+      bikesName[2].textContent = dataBikes[n].nameThree;
+      break;
+    case 'ТТ':
+      n = 2;
+      bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
+      bikesName[0].textContent = dataBikes[n].nameOne;
+      bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
+      bikesName[1].textContent = dataBikes[n].nameTwo;
+      bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
+      bikesName[2].textContent = dataBikes[n].nameThree;
+      break;
+  }
 })
