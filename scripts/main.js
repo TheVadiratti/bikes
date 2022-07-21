@@ -210,35 +210,7 @@ bikesButtons.forEach(item => {
       event.target.classList.add('bikes__button_active');
 
       // Изменение карточек
-      switch (event.target.textContent) {
-        case 'Шоссе':
-          n = 0;
-          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
-          bikesName[0].textContent = dataBikes[n].nameOne;
-          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
-          bikesName[1].textContent = dataBikes[n].nameTwo;
-          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
-          bikesName[2].textContent = dataBikes[n].nameThree;
-          break;
-        case 'Грэвел':
-          n = 1;
-          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
-          bikesName[0].textContent = dataBikes[n].nameOne;
-          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
-          bikesName[1].textContent = dataBikes[n].nameTwo;
-          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
-          bikesName[2].textContent = dataBikes[n].nameThree;
-          break;
-        case 'ТТ':
-          n = 2;
-          bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
-          bikesName[0].textContent = dataBikes[n].nameOne;
-          bikesImages[1].setAttribute('src', `${dataBikes[n].bikeTwo}`);
-          bikesName[1].textContent = dataBikes[n].nameTwo;
-          bikesImages[2].setAttribute('src', `${dataBikes[n].bikeThree}`);
-          bikesName[2].textContent = dataBikes[n].nameThree;
-          break;
-      }
+      changeBikes(event.target.textContent);
     }   
   })
 })
@@ -247,8 +219,12 @@ const optionElements = Array.from(document.querySelectorAll('.bikes__select'));
 const selectElement = document.querySelector('.bikes__menu-mobile');
 
 selectElement.addEventListener('change', () => {
+  changeBikes(selectElement.value);
+})
+
+function changeBikes (coverage) {
   // Изменение карточек
-  switch (selectElement.value) {
+  switch (coverage) {
     case 'Шоссе':
       n = 0;
       bikesImages[0].setAttribute('src', `${dataBikes[n].bikeOne}`);
@@ -277,4 +253,4 @@ selectElement.addEventListener('change', () => {
       bikesName[2].textContent = dataBikes[n].nameThree;
       break;
   }
-})
+}
