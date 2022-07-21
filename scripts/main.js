@@ -197,31 +197,6 @@ const bikesImages = Array.from(document.querySelectorAll('.card-bike__image_plac
 const bikesName = Array.from(document.querySelectorAll('.bikes__name'));
 let n;
 
-bikesButtons.forEach(item => {
-  item.addEventListener('click', function (event) {
-
-    // Проверка нажатия на уже активный вариант
-    if (!event.target.classList.contains('.bikes__button_active')) {
-
-      // Удаление модификатора активного пункта
-      document.querySelector('.bikes__button_active').classList.remove('bikes__button_active');
-
-      // Добавление модификатора активного пункта
-      event.target.classList.add('bikes__button_active');
-
-      // Изменение карточек
-      changeBikes(event.target.textContent);
-    }   
-  })
-})
-
-const optionElements = Array.from(document.querySelectorAll('.bikes__select'));
-const selectElement = document.querySelector('.bikes__menu-mobile');
-
-selectElement.addEventListener('change', () => {
-  changeBikes(selectElement.value);
-})
-
 function changeBikes (coverage) {
   // Изменение карточек
   switch (coverage) {
@@ -254,3 +229,28 @@ function changeBikes (coverage) {
       break;
   }
 }
+
+bikesButtons.forEach(item => {
+  item.addEventListener('click', function (event) {
+
+    // Проверка нажатия на уже активный вариант
+    if (!event.target.classList.contains('.bikes__button_active')) {
+
+      // Удаление модификатора активного пункта
+      document.querySelector('.bikes__button_active').classList.remove('bikes__button_active');
+
+      // Добавление модификатора активного пункта
+      event.target.classList.add('bikes__button_active');
+
+      // Изменение карточек
+      changeBikes(event.target.textContent);
+    }   
+  })
+})
+
+const optionElements = Array.from(document.querySelectorAll('.bikes__select'));
+const selectElement = document.querySelector('.bikes__menu-mobile');
+
+selectElement.addEventListener('change', () => {
+  changeBikes(selectElement.value);
+})
