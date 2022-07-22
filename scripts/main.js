@@ -254,3 +254,69 @@ const selectElement = document.querySelector('.bikes__menu-mobile');
 selectElement.addEventListener('change', () => {
   changeBikes(selectElement.value);
 })
+
+// ________________________________SWIPE_______________________________________
+
+const cardsBikeCnt = document.querySelector('.bikes__cards-cnt');
+const cardBikes = Array.from(document.querySelectorAll('.bikes__card-area'));
+let startX;
+let endX;
+let kk = 0;
+const indicatorPoints = Array.from(document.querySelectorAll('.slider-indicator__point'));
+
+function createPromise() {
+
+  const swipeStart = new Promise(function(resolve) {
+    cardsBikeCnt.addEventListener('touchstart', (event) => {
+      startX = event.changedTouches[0].pageX;
+      resolve();
+    });
+  });
+
+  const swipeEnd = new Promise(function(resolve) {
+    cardsBikeCnt.addEventListener('touchend', (event) => {
+      endX = event.changedTouches[0].pageX;
+      resolve();
+    });
+  })
+
+  Promise.all([swipeStart, swipeEnd])
+
+  .then(() => {
+
+    // проверка направления свайпа
+    if(startX > endX && kk < 2) {
+
+      kk = kk + 1;
+
+      indicatorPoints[kk].classList.add('slider-indicator__point_active');
+      indicatorPoints[kk - 1].classList.remove('slider-indicator__point_active');
+
+
+      // движение
+      cardBikes.forEach(card => {
+        i = card.style.right.indexOf('%');
+        initValue = card.style.right.slice(0, i);
+        nextValue = Number(initValue) + 100;
+        card.style.right = `${nextValue}%`;
+      })
+    }
+    else if (startX < endX && kk > 0) {
+
+      kk = kk - 1;
+
+      indicatorPoints[kk].classList.add('slider-indicator__point_active');
+      indicatorPoints[kk + 1].classList.remove('slider-indicator__point_active');
+
+      cardBikes.forEach(card => {
+        i = card.style.right.indexOf('%');
+        initValue = card.style.right.slice(0, i);
+        nextValue = Number(initValue) - 100;
+        card.style.right = `${nextValue}%`;
+      })
+    }
+    createPromise();
+  })
+}
+
+createPromise();

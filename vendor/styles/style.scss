@@ -54,6 +54,7 @@
 @import '../../blocks/bikes/__menu-mobile/bikes__menu-mobile';
 @import '../../blocks/bikes/__option/bikes__option';
 @import '../../blocks/bikes/__menu-item/bikes__menu-item';
+@import '../../blocks/bikes/__cards-cnt/bikes__cards-cnt';
 @import '../../blocks/bikes/__card-area/bikes__card-area';
 @import '../../blocks/bikes/__button/bikes__button';
 @import '../../blocks/bikes/__link/bikes__link';
@@ -115,6 +116,8 @@
 @import '../../blocks/trainings/__link/_theme/trainings__link_theme_dark';
 
 @import '../../blocks/bikes/__button/_active/bikes__button_active';
+@import '../../blocks/bikes/__name/_type/bikes__name_type_pc';
+@import '../../blocks/bikes/__name/_type/bikes__name_type_mobile';
 
 @import '../../blocks/footer/_theme/footer_theme_dark';
 @import '../../blocks/footer/__input/_theme/footer__input_theme_dark';
