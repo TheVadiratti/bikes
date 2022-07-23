@@ -1,8 +1,10 @@
 .coverages__carousel {
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 650px 650px;
+  column-gap: 40px;
   margin-top: 80px;
   width: auto;
-  display: flex;
-  flex-wrap: nowrap;
   overflow: hidden;
 }
 

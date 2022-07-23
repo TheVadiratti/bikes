@@ -516,10 +516,13 @@
   }
 }
 .coverages__carousel {
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 650px 650px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   margin-top: 80px;
   width: auto;
-  display: flex;
-  flex-wrap: nowrap;
   overflow: hidden;
 }
 
@@ -532,10 +535,9 @@
 .coverages__image {
   width: 650px;
   height: 400px;
-  margin: 0 40px 0 0;
-  background-position: center;
+  margin: 0;
   background-size: cover;
-  transition: all 1s linear;
+  transition: background-image 1s linear;
 }
 
 .coverages__image:nth-of-type(1) {
@@ -544,10 +546,6 @@
 
 .coverages__image:nth-of-type(2) {
   background-image: url(../../../images/coverages/highway/image2.png);
-}
-
-.coverages__image:last-of-type {
-  margin-right: 0;
 }
 
 @media screen and (max-width: 768px) {
