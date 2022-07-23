@@ -10,6 +10,8 @@
 
 @media screen and (max-width: 768px) {
   .coverages__carousel {
+    grid-template-rows: 175px;
+    grid-template-columns: 284px;
     margin-top: 40px;
     order: 3;
   }
