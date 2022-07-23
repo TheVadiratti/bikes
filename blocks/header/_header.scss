@@ -15,6 +15,6 @@
     position: sticky;
     padding: 0;
     flex-direction: column-reverse;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
   }
 }

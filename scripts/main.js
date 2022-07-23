@@ -22,13 +22,21 @@ const coveragesButtons = document.querySelectorAll('.coverages__button');
 function openMenu() {
   if (buttonMenu.classList.contains('header__button_type_menu')) {
     header.classList.add('header_opened');
-    headerMenu.classList.add('header__menu_opened');
+
+    // таймер для плавного открытия меню
+    setTimeout(() => {
+      headerMenu.classList.add('header__menu_opened');
     toggleArea.classList.add('toggle-area_opened');
     buttonMenu.classList.remove('header__button_type_menu');
     buttonMenu.classList.add('header__button_type_x');
+    }, 300);
   }
   else if (buttonMenu.classList.contains('header__button_type_x')) {
-    header.classList.remove('header_opened');
+
+    // таймер для плавного закрытия
+    setTimeout(() => {
+      header.classList.remove('header_opened');
+    }, 200);
     headerMenu.classList.remove('header__menu_opened');
     toggleArea.classList.remove('toggle-area_opened');
     buttonMenu.classList.remove('header__button_type_x');
@@ -253,6 +261,20 @@ const selectElement = document.querySelector('.bikes__menu-mobile');
 
 selectElement.addEventListener('change', () => {
   changeBikes(selectElement.value);
+  cardBikes.forEach(card => {
+
+    // обнуление слайдера
+    card.style.right = `0%`;
+
+    // поиск активного индикатора и удаление класса active
+    document.querySelector('.slider-indicator__point_active').classList.remove('slider-indicator__point_active');
+
+    // добавление класса нужному индикатору
+    indicatorPoints[0].classList.add('slider-indicator__point_active');
+
+    // обнуление счетчика слайдов
+    kk = 0;
+  })
 })
 
 // ________________________________SWIPE_______________________________________
