@@ -83,7 +83,9 @@ function cardBikeAnimation() {
   cardBikeLead.classList.add('card-bike_animation');
 }
 
-document.addEventListener('scroll', cardBikeAnimation);
+setTimeout(() => {
+  cardBikeAnimation();
+}, 500);
 
 // анимация кнопки подробнее
 
