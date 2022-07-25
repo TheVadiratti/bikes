@@ -1,7 +1,6 @@
-const buttonMenu = document.querySelector('.header__button');
 const header = document.querySelector('.header');
+const buttonMenu = document.querySelector('.header__button');
 const headerMenu = document.querySelector('.header__menu');
-const headerLinks = document.querySelectorAll('.header__menu-link');
 const toggleArea = document.querySelector('.toggle-area');
 const themeToggles = document.querySelectorAll('.toggle-area__toggle');
 const toggleHeader = document.querySelector('.toggle-area__toggle_place_header');
@@ -50,27 +49,19 @@ buttonMenu.addEventListener('click', openMenu);
 
 function changeTheme() {
   page.classList.toggle('page_theme_dark');
-  header.classList.toggle('header_theme_dark');
-  headerLinks.forEach(item => {
-    item.classList.toggle('header__menu-link_theme_dark');
-  })
   toggleHeader.classList.toggle('toggle-area__toggle_theme_dark');
-  toggleFooter.classList.toggle('toggle-area__toggle_theme_dark');
-  buttonMenu.classList.toggle('header__button_theme_dark');
+  toggleFooter.classList.toggle('toggle-area__toggle_theme_dark');;
   sectionDescriptions.forEach(item => {
     item.classList.toggle('section-description_theme_dark');
   })
-  trainingsLinks.forEach(item => {
-    item.classList.toggle('trainings__link_theme_dark');
-  })
-  footer.classList.toggle('footer_theme_dark');
   bikesLinks.forEach(item => {
     item.classList.toggle('bikes__name_theme_dark');
   })
-  footerInput.classList.toggle('footer__input_theme_dark');
   coveragesButtons.forEach(item => {
     item.classList.toggle('coverages__button_theme_dark');
   })
+  footer.classList.toggle('footer_theme_dark');
+  footerInput.classList.toggle('footer__input_theme_dark');
 }
 
 themeToggles.forEach(item => {

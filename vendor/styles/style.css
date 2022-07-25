@@ -12,7 +12,7 @@
 .header {
   width: 100%;
   height: 74px;
-  background-color: #F4F4F4;
+  background-color: inherit;
   top: 0;
   left: 0;
   z-index: 100;
@@ -23,8 +23,7 @@
 
 @media screen and (max-width: 1280px) {
   .header {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     padding: 0;
     flex-direction: column-reverse;
     transition: all 0.5s ease-in-out;
@@ -45,7 +44,7 @@
 @media screen and (max-width: 1280px) {
   .lead {
     grid-template-columns: 1fr;
-    margin: 40px 18px 0;
+    margin: 114px 18px 0;
     padding-bottom: 80px;
     border-bottom: 1px solid #e3e3e3;
   }
@@ -241,7 +240,7 @@
 }
 .header__menu-link {
   text-decoration: none;
-  color: #151515;
+  color: inherit;
 }
 
 .header__menu-link:hover {
@@ -678,7 +677,7 @@
   display: flex;
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: #f4f4f4;
+  background-color: inherit;
 }
 
 @media screen and (max-width: 768px) {
@@ -692,7 +691,7 @@
 }
 .bikes__card-area {
   margin-left: 30px;
-  background-color: #f4f4f4;
+  background-color: inherit;
 }
 
 .bikes__card-area:first-of-type {
@@ -735,7 +734,7 @@
 }
 .bikes__link {
   text-decoration: none;
-  color: #151515;
+  color: inherit;
 }
 
 .bikes__name {
@@ -762,7 +761,7 @@
   font-size: 18px;
   line-height: 28px;
   text-decoration: none;
-  color: #151515;
+  color: inherit;
   margin-left: 26px;
 }
 
@@ -857,19 +856,19 @@
 }
 
 .footer__input::-webkit-input-placeholder {
-  color: #151515;
+  color: inherit;
 }
 
 .footer__input::-moz-placeholder {
-  color: #151515;
+  color: inherit;
 }
 
 .footer__input:-moz-placeholder {
-  color: #151515;
+  color: inherit;
 }
 
 .footer__input:-ms-input-placeholder {
-  color: #151515;
+  color: inherit;
 }
 
 .footer__input:focus ~ .footer__submit {
@@ -943,14 +942,6 @@
   color: #fff;
 }
 
-.header_theme_dark {
-  background-color: #333;
-}
-
-.header__menu-link_theme_dark {
-  color: #fff;
-}
-
 @media screen and (max-width: 1280px) {
   .header_opened {
     height: 100vh;
@@ -975,11 +966,6 @@
     background-size: 150%;
   }
 }
-.header__button_theme_dark {
-  background-color: #333;
-  transition: all 0.5s ease;
-}
-
 @-webkit-keyframes Loading {
   from {
     background-position: 100% 0;
@@ -988,7 +974,6 @@
     background-position: 0 0;
   }
 }
-
 @keyframes Loading {
   from {
     background-position: 100% 0;
@@ -1070,7 +1055,7 @@
   }
 }
 .section-description_theme_dark {
-  color: #fff;
+  color: #E6E6E6;
 }
 
 .card-bike_place_lead {
@@ -1178,14 +1163,6 @@
   background-image: url(../../../../images/coverages__button_type_right_dark.svg);
 }
 
-.bikes__name_theme_dark {
-  color: #fff;
-}
-
-.trainings__link_theme_dark {
-  color: #fff;
-}
-
 .bikes__button_active {
   font-weight: 600;
 }
@@ -1208,6 +1185,10 @@
     display: block;
   }
 }
+.slider-indicator__point_active {
+  background-color: #151515;
+}
+
 .footer_theme_dark {
   background-color: #2F2F2F;
 }
@@ -1234,10 +1215,6 @@
 .footer__input_theme_dark:-ms-input-placeholder {
   color: #fff;
   opacity: 0.5;
-}
-
-.slider-indicator__point_active {
-  background-color: #151515;
 }
 
 .dn {

@@ -1,7 +1,7 @@
 .trainings__link {
   @include font (600, 18px, 28px);
   text-decoration: none;
-  color: #151515;
+  color: inherit;
   margin-left: 26px;
 }
 
