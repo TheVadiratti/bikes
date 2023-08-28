@@ -1,0 +1,24 @@
+.lead__button {
+  @include size (180px, 50px);
+  margin-top: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  @include font (600, 14px, 18px);
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: $green;
+  cursor: pointer;
+}
+
+.lead__button:hover {
+  background-color: #319E75;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__button {
+    @include size (auto, 46px);
+    @include font (600, 13px, 19px);
+    margin-top: 40px;
+  }
+}

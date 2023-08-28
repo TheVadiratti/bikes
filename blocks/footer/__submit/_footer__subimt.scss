@@ -1,0 +1,11 @@
+.footer__submit {
+  @include size (16px, 28px);
+  @include font (500, 13px, 28px);
+  margin-right: 11px;
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  display: none;
+}

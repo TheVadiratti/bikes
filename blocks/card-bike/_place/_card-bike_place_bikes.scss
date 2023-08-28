@@ -1,0 +1,12 @@
+.card-bike_place_bikes {
+  @include size (380px, 380px);
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (max-width: 768px) {
+  .card-bike_place_bikes {
+    @include size (284px, 306px);
+    display: flex;
+    flex-direction: column;
+  }
+}

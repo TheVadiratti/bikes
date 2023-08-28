@@ -1,0 +1,26 @@
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font ($weight, $size, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+$font-black: #151515;
+$green: #24B47E;
+$whiteMain: #f4f4f4;
+$fontWhiteAdditional: #E6E6E6;
+$fontBlackAdditional: #434343;
+
+.page {
+  width: 100%;
+  margin: auto;
+  background-color: $whiteMain;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: $font-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

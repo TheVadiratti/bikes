@@ -1,0 +1,14 @@
+.section-description {
+  max-width: 460px;
+  @include font (400, 18px, 28px);
+  margin: 50px 0 0;
+  color: #222;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .section-description {
+    @include font (400, 12px, 18px);
+    margin-top: 40px;
+  }
+}

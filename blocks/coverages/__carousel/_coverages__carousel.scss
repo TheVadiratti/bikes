@@ -1,0 +1,18 @@
+.coverages__carousel {
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 650px 650px;
+  column-gap: 40px;
+  margin-top: 80px;
+  width: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__carousel {
+    grid-template-rows: 175px;
+    grid-template-columns: 284px;
+    margin-top: 40px;
+    order: 3;
+  }
+}

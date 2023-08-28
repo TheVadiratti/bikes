@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+  .coverages__description {
+    @include font (400, 12px, 18px);
+    margin-top: 40px;
+    order: 4;
+  }
+}

@@ -1,0 +1,12 @@
+.quote__image {
+  @include size (650px, 460px);
+  background-image: url(../../../images/quote__image.png);
+}
+
+@media screen and (max-width: 768px) {
+  .quote__image {
+    @include size (284px, 204px);
+    background-size: 110%;
+    background-repeat: no-repeat;
+  }
+}

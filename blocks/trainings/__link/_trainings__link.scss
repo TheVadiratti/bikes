@@ -1,0 +1,20 @@
+.trainings__link {
+  @include font (600, 18px, 28px);
+  text-decoration: none;
+  color: inherit;
+  margin-left: 26px;
+}
+
+.trainings__link:first-of-type {
+  margin-left: 0;
+}
+
+.trainings__link:hover {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 768px) {
+  .trainings__link {
+    @include font (600, 14px, 20px);
+  }
+}

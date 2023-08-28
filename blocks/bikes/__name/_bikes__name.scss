@@ -1,0 +1,14 @@
+.bikes__name {
+  @include font (600, 18px, 22px);
+  margin: 22px 0 0 6px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__name {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+}

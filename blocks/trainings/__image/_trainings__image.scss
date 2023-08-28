@@ -1,0 +1,19 @@
+.trainings__image {
+  @include size (580px, 460px);
+  background-image: url(../../../images/trainings__image.png);
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .trainings__image {
+    @include size (284px, 225px);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}

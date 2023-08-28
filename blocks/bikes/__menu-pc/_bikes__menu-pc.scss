@@ -1,0 +1,13 @@
+.bikes__menu-pc {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__menu-pc {
+    display: none;
+  }
+}

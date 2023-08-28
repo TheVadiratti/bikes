@@ -1,0 +1,11 @@
+.quote__about-author {
+  @include font (400, 16px, 28px);
+  margin: 6px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .quote__about-author {
+    @include font (400, 10px, 16px);
+    margin-top: 4px;
+  }
+}

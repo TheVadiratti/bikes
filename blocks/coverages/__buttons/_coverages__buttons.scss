@@ -1,0 +1,14 @@
+.coverages__buttons {
+  margin-top: 50px;
+  order: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__buttons {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}

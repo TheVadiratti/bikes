@@ -1,0 +1,13 @@
+.coverages__heading {
+  @include font (700, 55px, 60px);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__heading {
+    flex: 50%;
+    @include font (700, 32px, 40px);
+    order: 1;
+  }
+}

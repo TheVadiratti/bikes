@@ -1,0 +1,17 @@
+.coverages__way-icon {
+  @include size (100px, 40px);
+  background-image: url(../../../images/coverages/highway/way-icon.svg);
+  background-size: 100%;
+  position: relative;
+  top: 344px;
+  left: 0;
+  transition: all 2s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .coverages__way-icon {
+    @include size (70px, 28px);
+    top: 133px;
+    left: 0;
+  }
+}

@@ -1,0 +1,7 @@
+.footer__copyright {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  @include font (600, 14px, 20px);
+  color: #CFCFCF;
+  margin-top: 100px;
+}

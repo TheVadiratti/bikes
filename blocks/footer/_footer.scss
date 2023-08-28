@@ -1,0 +1,13 @@
+.footer {
+  background-color: #efefef;
+  padding: 80px 120px 60px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 55px 18px 25px;
+  }
+}

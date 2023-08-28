@@ -1,0 +1,6 @@
+.toggle-area__switch {
+  @include size (20px, 20px);
+  margin: 0 2px 0;
+  background-color: $green;
+  border-radius: 9999px;
+}

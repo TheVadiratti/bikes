@@ -1,0 +1,10 @@
+.section-heading_place_bikes {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading_place_bikes {
+    grid-column-end: 2;
+  }
+}

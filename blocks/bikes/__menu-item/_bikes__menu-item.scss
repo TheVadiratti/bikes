@@ -1,0 +1,19 @@
+.bikes__menu-item {
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+.bikes__menu-item:first-of-type {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__menu-item {
+    margin-left: 0;
+    display: none;
+  }
+
+  .bikes__menu-item:first-of-type {
+    display: block;
+  }
+}

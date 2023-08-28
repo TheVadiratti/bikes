@@ -1,0 +1,14 @@
+.lead__title {
+  @include size (460px, auto);
+  margin: 64px 0 0;
+  @include font (700, 55px, 60px);
+  letter-spacing: -0.25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__title {
+    width: auto;
+    margin: 40px 0 0;
+    @include font (700, 32px, 40px);
+  }
+}

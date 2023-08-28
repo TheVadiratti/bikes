@@ -1,0 +1,11 @@
+.lead__name-cnt {
+  margin-top: 167px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__name-cnt {
+    display: none;
+  }
+}

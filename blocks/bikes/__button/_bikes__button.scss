@@ -1,0 +1,22 @@
+.bikes__button {
+  @include font (400, 18px, 28px);
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+
+  /* подгон разметки pp */
+  margin-bottom: 7px;
+  margin-right: 2px;
+}
+
+.bikes__button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__button {
+    @include font (600, 11px, 14px);
+  }
+}

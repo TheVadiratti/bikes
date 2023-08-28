@@ -1,0 +1,16 @@
+.bikes__cards-cnt {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .bikes__cards-cnt {
+    margin-top: 20px;
+    overflow: hidden;
+    grid-column-end: 2;
+    border-radius: 20px;
+    box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06); 
+  }
+}

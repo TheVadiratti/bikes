@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/styles/normalize.css">
+    <link rel="stylesheet" href="./vendor/fonts/font.css">
+    <link rel="stylesheet" href="./vendor/styles/style.css">
+    <title>Bikes</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="toggle-area toggle-area_place_header">
+        <div class="toggle-area__image toggle-area__image_light"></div>
+        <button type="button" class="toggle-area__toggle toggle-area__toggle_place_header">
+          <div class="toggle-area__switch"></div>
+        </button>
+        <div class="toggle-area__image toggle-area__image_dark"></div>
+      </div>
+      <menu class="header__menu">
+        <li class="header__menu-item"><a class="header__menu-link" href="#trainings">Тренировки</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#bikes">Велосипеды</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#coverages">Покрытия и градиенты</a></li>
+      </menu>
+      <button type="button" class="header__button header__button_type_menu" aria-label="Меню"></button>
+    </header>
+    <main class="main">
+      <section class="lead">
+        <h1 class="section-heading section-heading_place_lead">Шоссе, ТТ и&nbsp;Грэвел</h1>
+        <div class="lead__image">
+          <div class="card-bike card-bike_place_lead">
+            <img class="card-bike__image card-bike__image_place_lead" src="./images/bikes/bike-Cannondale_Systemsix.png">
+          </div>
+        </div>
+        <p class="section-description">Триатлонные старты, горные серпантины или<br>грейвел заезды по живописным маршрутам –<br> нужно только определиться с выбором<br> велосипеда и отправиться в путь.</p>
+        <button type="button" class="lead__button" aria-label="Подробнее">Подробнее</button>
+        <div class="lead__name-cnt">
+          <p class="lead__name">Cannondale Systemsix</p>
+          <div class="lead__line"></div>
+        </div>
+      </section>
+      <section class="quote">
+        <div class="quote__image"></div>
+        <div class="quote__text">
+          <q class="quote__phrase">Катайся много или мало, долго или коротко, как хочешь - но катайся</q>
+          <div class="quote__author">
+            <p class="quote__name">Эдди Меркс</p>
+            <p class="quote__about-author">Велогонщик</p>
+          </div>
+        </div>
+      </section>
+      <section class="coverages" id="coverages">
+        <h2 class="section-heading coverages__heading">Шоссе</h2>
+        <p class="section-description coverages__description">На шоссейном велосипеде можно ездить по<br> асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне,<br> но тренироваться можно и самостоятельно.</p>
+        <div class="coverages__carousel">
+          <div class="coverages__image">
+            <div class="coverages__way-icon"></div>
+          </div>
+          <div class="coverages__image"></div>
+        </div>
+        <div class="coverages__buttons">
+          <button type="button" class="coverages__button coverages__button_type_back"></button>
+          <button type="button" class="coverages__button coverages__button_type_forward"></button>
+        </div>
+      </section>
+      <section class="bikes" id="bikes">
+        <h2 class="section-heading section-heading_place_bikes">Велосипеды</h2>
+        <select class="bikes__menu-mobile">
+          <option class="bikes__option">Шоссе</option>
+          <option class="bikes__option">Грэвел</option>
+          <option class="bikes__option">ТТ</option>
+        </select>
+        <menu class="bikes__menu-pc">
+          <li class="bikes__menu-item"><button type="button" class="bikes__button bikes__button_active">Шоссе</button></li>
+          <li class="bikes__menu-item"><button type="button" class="bikes__button">Грэвел</button></li>
+          <li class="bikes__menu-item"><button type="button" class="bikes__button">ТТ</button></li>
+        </menu>
+        <div class="bikes__cards-cnt">
+          <div class="bikes__card-area">
+            <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank">
+              <div class="card-bike card-bike_place_bikes">
+                <img class="card-bike__image card-bike__image_place_bikes" src="./images/bikes/Carvelo_Caledonia-5.png" alt="l">
+                <p class="bikes__name bikes__name_type_mobile">Cervelo Caledonia-5</p>
+              </div>
+              <p class="bikes__name bikes__name_type_pc">Cervelo Caledonia-5</p>
+            </a>
+          </div>
+          <div class="bikes__card-area">
+            <a class="bikes__link" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank">
+              <div class="card-bike card-bike_place_bikes">
+                <img class="card-bike__image card-bike__image_place_bikes" src="./images/bikes/Cannondale_Systemsix_Himod.png" alt="l">
+                <p class="bikes__name bikes__name_type_mobile">Cannondale Systemsix Himod</p>
+              </div>
+              <p class="bikes__name bikes__name_type_pc">Cannondale Systemsix Himod</p>
+            </a>
+          </div>
+          <div class="bikes__card-area">
+            <a class="bikes__link" href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank">
+              <div class="card-bike card-bike_place_bikes">
+                <img class="card-bike__image card-bike__image_place_bikes" src="./images/bikes/Trek_Domane_SL-7.png" alt="l">
+                <p class="bikes__name bikes__name_type_mobile">Trek Domane SL-7</p>
+              </div>
+              <p class="bikes__name bikes__name_type_pc">Trek Domane SL-7</p>
+            </a>
+          </div>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indicator__point slider-indicator__point_active"></div>
+          <div class="slider-indicator__point"></div>
+          <div class="slider-indicator__point"></div>
+        </div>
+      </section>
+      <section class="trainings" id="trainings">
+        <h2 class="section-heading">Тренировки</h2>
+        <div class="trainings__image"></div>
+        <p class="section-description section-description_place_trainings">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также<br> это приложение позволит построить<br> тренировочный план.</p>
+        <div class="trainings__links">
+          <a class="trainings__link" href="https://www.strava.com" target="_blank">Strava</a>
+          <a class="trainings__link" href="https://www.komoot.com" target="_blank">Komoot</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__form-heading">Подпишитесь на рассылку —</p>
+      <form class="footer__form">
+        <div class="footer__input-cnt">
+          <input type="email" class="footer__input" placeholder="Ваш e-mail">
+          <button type="submit" class="footer__submit">ok</button>
+        </div>
+      </form>
+      <p class="footer__copyright">&COPY; Road Club 2021</p>
+      <div class="toggle-area toggle-area_place_footer">
+        <div class="toggle-area__image toggle-area__image_light"></div>
+        <button type="button" class="toggle-area__toggle toggle-area__toggle_place_footer">
+          <div class="toggle-area__switch"></div>
+        </button>
+        <div class="toggle-area__image toggle-area__image_dark"></div>
+      </div>
+      <button type="button" class="footer__button"></button>
+    </footer>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
